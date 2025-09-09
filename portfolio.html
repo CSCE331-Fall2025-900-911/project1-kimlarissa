@@ -5,10 +5,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 </head>
 
+<link rel="stylesheet" href="styles.css">
 <body>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td valign="middle" class="logo">
+    <td valign="middle" class="logo navbar">
       <img src="./assets/valo_square.jpg" alt="Logo" height="40" valign="middle">
       &nbsp;
       <a href="index.html">Home</a>&nbsp;&nbsp;
@@ -18,9 +19,9 @@
       <a href="ai_page.html">AI</a>&nbsp;&nbsp;
     </td>
   </tr>
-</table>  
+</table>
 
-<table  border="1" cellspacing="0" cellpadding="10" align="center" bordercolor="black">
+<table class="portfolio-title-container" border="1" cellspacing="0" cellpadding="10" align="center" bordercolor="black">
   <tr>
     <td align="center" valign="middle">
       <h1>Portfolio</h1>
@@ -28,68 +29,72 @@
   </tr>
 </table>
 
-<table align="center" cellpadding="10">
+<table class="project-section" align="center" cellpadding="10">
     <tr>
         <td align="right" valign="bottom" width="33%">
-            <h2>
-                Summary
-            </h2>
-            <p>
-                FindAYota is a web app that helps users find Toyota vehicles matching their preferences and budget. Users input their desired features, and the system recommends the top three models while estimating monthly payments. Built with Flask and Tailwind CSS, it offers an intuitive interface with plans to expand features and support more car brands.
-            </p>
+            <img src="./assets/betterline.png" alt="line" width="33%">
+            <div class="project-box">
+                <h2>
+                    Summary
+                </h2>
+                <p>
+                    FindAYota is a web app that helps users find Toyota vehicles matching their preferences and budget. Users input their desired features, and the system recommends the top three models while estimating monthly payments. Built with Flask and Tailwind CSS, it offers an intuitive interface with plans to expand features and support more car brands.
+                </p>
+            </div>
+            
         </td>
 
-        <td align="center" width="33%" valign="top" style="position:relative;"> 
+        <td class="project-image-container" align="center" width="33%" valign="top"> 
             <a href="https://devpost.com/software/findayota">
-                <img src="./assets/toyota_project.jpg" style="display:block;" alt="portfolio_pic" width="60%">
+                <img class="project-image" src="./assets/toyota_project.jpg" alt="portfolio_pic" width="60%">
             </a>
-            <table width="100%" border="0" cellspacing="0" cellpadding="5" align="center" style="margin-top: -40px;">
+            <table class="project-caption-container" width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
                 <tr>
                     <td align="center">
-                        <font style="background-color: black; color: white; padding: 2px 5px;">FindAYota</font>
+                        <font class="project-caption">FindAYota</font>
                     </td>
                 </tr>
             </table>
         </td>
 
         <td valign="top" width="33%">
-            <h2>
-                Features
-            </h2>
-            <ul>
-                <li>An interactive UI/UX design</li>
-                <li>Smart calculation of car compatability</li>
-                <li>Customizable financial planning for each car</li>
-                <li>Intuitive form design</li>
-            </ul>
+            <div class="project-box">
+                <h2>
+                    Features
+                </h2>
+                <ul>
+                    <li>An interactive UI/UX design</li>
+                    <li>Smart calculation of car compatability</li>
+                    <li>Customizable financial planning for each car</li>
+                    <li>Intuitive form design</li>
+                </ul>
+            </div>
+            <img src="./assets/betterline-flip.png" alt="line" width="33%">
         </td>
     </tr>
 
 </table>
-<table align="center" cellspacing="10" cellpadding="0">
-    <tr>
-        <td align="center" valign="middle">
-            <img src="./assets/arrow-left.png" alt="left_arrow" width="30">
-        </td>
+<div class="selection-wrapper">
+    <div class="red-selection" align="center">
+        <table align="center" cellspacing="10" cellpadding="0">
+            <tr>
+                <td align="center" valign="middle">
+                    <img src="./assets/small_food.jpg" alt="TakeAByte" width="60">
+                </td>
 
-        <td align="center" valign="middle">
-            <img src="./assets/small_food.jpg" alt="TakeAByte" width="60">
-        </td>
+                <td align="center" valign="middle">
+                    <img src="./assets/toyota_small.jpg" alt="FindAYota" width="60">
+                </td>
 
-        <td align="center" valign="middle">
-            <img src="./assets/toyota_small.jpg" alt="FindAYota" width="60">
-        </td>
+                <td align="center" valign="middle">
+                    <img src="./assets/pengu.png" alt="Hexforce" width="60">
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
 
-        <td align="center" valign="middle">
-            <img src="./assets/pengu.png" alt="Hexforce" width="60">
-        </td>
-
-        <td align="center" valign="middle">
-            <img src="./assets/arrow-right.png" alt="right_arrow" width="30">
-        </td>
-    </tr>
-</table>
-<table align="center" cellspacing="20" cellpadding="0">
+<table class="inspo-container" align="center" cellspacing="20">
     <tr>
         <td width="50%" valign="top">
             <h1>My Inspiration</h1>
@@ -106,6 +111,7 @@
             <p>
                 Enjoy this picture of me and my bearded dragon Purdy!
             </p>
+            <br>
             <h4>My Project Bucket List</h4>
             <ul>
                 <li>AI TFT Composition Builder</li>
@@ -113,7 +119,7 @@
             </ul>
         </td>
 
-        <td align="center" width="50%" valign="top">
+        <td align="right" width="50%" valign="top">
             <img src="./assets/my_n_purdy.jpg" alt="purdy" width="80%">
         </td>
     </tr>
