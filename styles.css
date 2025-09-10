@@ -176,10 +176,21 @@ body{
 .project-image {
     display: block;
     width: 60%;
+    z-index: 1;
+}
+
+.project-image:hover {
+    filter: drop-shadow(0 0 10px #FD4556) drop-shadow(0 0 15px #FD4556);
+    transition: box-shadow 0.3s ease;
 }
 
 .project-caption-container {
     margin-top: -40px;
+}
+
+.caption-holder {
+    z-index: 5;
+    position: relative;
 }
 
 .project-caption{

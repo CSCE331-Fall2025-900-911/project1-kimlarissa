@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const summaryElement = document.getElementById('project-summary');
     const featuresElement = document.getElementById('project-features');
     const imageElement = document.getElementById('project-image');
+    const linkElement = document.getElementById('project-link');
 
     selectionItems.forEach(item => {
         item.addEventListener('click', function(event) {
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             titleElement.textContent = this.dataset.title;
             summaryElement.textContent = this.dataset.summary;
             imageElement.src = this.dataset.image;
+            linkElement.href = this.dataset.link;
 
             featuresElement.innerHTML = "";
             JSON.parse(this.dataset.features).forEach(f => {
