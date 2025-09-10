@@ -201,7 +201,27 @@ body{
     a{
         color: #42b99f;
         text-decoration: none;
+        transition: 0.2s ease;
     }
+    a:hover {
+        color:#FD4556;
+    }
+}
+
+.selection-item {
+    cursor: pointer;
+    border: transparent;
+    border-radius: 6px;
+    transition: border 0.3s, transform 0.2s;
+}
+
+.selection-item:hover {
+    border: 3px solid #BD3944;
+    transform: scale(1.07);
+}
+
+.selection-item.selected {
+    border: 3px solid #53212B;
 }
 
 /*  */
