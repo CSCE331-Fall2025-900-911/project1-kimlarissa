@@ -433,6 +433,19 @@ body{
     }
 }
 
+embed {
+    justify-content: center;
+
+    display: flex;
+    width: 850px;
+    height: 1050px;
+}
+
+section {
+    justify-content: center;
+    display: flex;
+}
+
 .stepping-section {
     
     border-top: 2px solid #FD4556;
