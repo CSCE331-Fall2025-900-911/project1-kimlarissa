@@ -177,11 +177,11 @@ body{
     display: block;
     width: 60%;
     z-index: 1;
+    transition: filter 0.2s ease;
 }
 
 .project-image:hover {
     filter: drop-shadow(0 0 10px #FD4556) drop-shadow(0 0 15px #FD4556);
-    transition: box-shadow 0.3s ease;
 }
 
 .project-caption-container {
@@ -235,7 +235,7 @@ body{
     border: 3px solid #53212B;
 }
 
-/*  */
+/* QUALIFICATIONS */
 .image-section {
     position: relative;
     margin-top: 20px;
@@ -300,6 +300,52 @@ body{
     margin: 0 0 5px 0;
 }
 
+.overlay {
+    h1 {
+        font-family: 'ValFont';
+    }
+
+    h4 {
+        font-family: 'Trebuchet MS';
+    }
+
+    p {
+        font-family: 'Trebuchet MS';
+    }
+}
+
+.resume-button {
+    border: 2px;
+    border-color: white;
+    background-color: #42b99f;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 80px;
+    font-family: trebuchet ms, sans-serif;
+    margin: 5px;
+    font-size: 20px !important;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-button:hover {
+    background-color: #8de0ce;
+    transform: scale(1.05);
+}
+
+.next-button {
+    background-color: #FD4556;
+    border-color: transparent;
+    border-radius: 6px;
+    height: 100px !important;
+    transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #BD3944;
+}
+
 .skills-section {
     width: 100%;
     text-align: center;
@@ -308,7 +354,7 @@ body{
 
 .skills-title {
     display: inline-block;
-    border: 1px solid black;
+    border: 1px solid #FD4556;
     margin-bottom: 30px;
     padding: 1px 3px 1px 3px;
 }
@@ -316,6 +362,8 @@ body{
 .skills-title h2 {
     margin: 0;
     padding: 5px;
+    color: #FD4556;
+    font-family: 'ValFont';
 }
 
 .skills-grid {
@@ -329,9 +377,36 @@ body{
 }
 
 .skill-item {
-    border: 1px solid black;
-    padding: 20px;
+    border: 1px solid #FD4556;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.3s ease;
+
+    h4 {
+        font-family: 'Trebuchet MS';
+        color: #FD4556;
+    }
+}
+
+.skill-item:hover {
+    background-color: #fd45573b;
+}
+
+.lore-section {
+    h1 {
+        color: white;
+        font-family: 'ValFont';
+    }
+
+    h3 {
+        color: #FD4556;
+        font-family: 'Trebuchet MS';
+    }
+
+    p {
+        color: white;
+        font-family: 'Trebuchet MS';
+    }
 }
