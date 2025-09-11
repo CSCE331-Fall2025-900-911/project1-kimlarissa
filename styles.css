@@ -410,3 +410,59 @@ body{
         font-family: 'Trebuchet MS';
     }
 }
+
+/* SERVICE */
+.tao-section {
+    h2 {
+        color: #FD4556;
+        font-family: 'ValFont'
+    }
+
+    p {
+        color: white;
+        font-family: 'Trebuchet MS';
+    }
+
+    a{
+        color: #42b99f;
+        text-decoration: none;
+        transition: 0.2s ease;
+    }
+    a:hover {
+        color:#FD4556;
+    }
+}
+
+.stepping-section {
+    
+    border-top: 2px solid #FD4556;
+    h2 {
+        color: #FD4556;
+        font-family: 'ValFont'
+    }
+
+    p {
+        color: white;
+        font-family: 'Trebuchet MS';
+    }
+
+    small {
+        color: #FD4556;
+        font-family: 'Trebuchet MS';
+    }
+
+    a{
+        color: #42b99f;
+        text-decoration: none;
+        transition: 0.2s ease;
+    }
+    a:hover {
+        color:#FD4556;
+    }
+}
+
+.stepping-table {
+    border-top: 2px solid #FD4556;
+    padding-top: 40px !important;
+}
+
