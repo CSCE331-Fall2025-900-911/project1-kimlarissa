@@ -10,6 +10,15 @@ body{
     background-color: #111823;
 }
 
+.alt-img { display: none !important; }
+
+.alt-landing-layout { display: none !important;}
+
+.alt-text,
+.alt-text + br {
+    display: none !important;
+}
+
 .navbar-container {
     margin-bottom: 10px;
 }
@@ -32,6 +41,10 @@ body{
 
 .pdf-ref {
     text-decoration: none
+}
+
+.aura-to-rank {
+    display: none;
 }
 
 .character-container {

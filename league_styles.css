@@ -1,0 +1,213 @@
+/* FONTS */
+@font-face {
+    font-family: 'LOLBeaufort';
+    src: url('fonts/BeaufortforLOL-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LOLSpiegel';
+    src: url('fonts/Spiegel_TT_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LOLSpiegelBold';
+    src: url('fonts/Spiegel_TT_Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* LANDING PAGE */
+
+body{
+    background-color: #042028;
+    margin-left: 150px;
+}
+
+.default-landing-layout { display: none !important; }
+
+.default-img { display: none !important; }
+
+.default-text,
+.default-text + br {
+    display: none !important;
+}
+
+.character-container tr {
+    display: flex;
+}
+
+.navbar-container {
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-container td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+.navbar-container a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: "LOLBeaufort";
+    text-align: left;
+    color: #BE5A04;
+    border-radius: 8px;
+    background-color: #03171c;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #BE5A04;
+    color: #03171c;
+}
+
+.character-container td:first-child { 
+    order: 2; 
+} 
+
+.character-container td:last-child  { 
+    order: 1; 
+}
+
+.character-container {
+    padding: 6px;
+    margin-bottom: 20px;
+    border-color: #BE5A04;
+
+    h1, small, h2, h3, p{
+        color: #BE5A04;
+    }
+
+    h1, h2, h3, small{
+        font-family: 'LOLBeaufort';  
+    }
+    p{
+        font-family: 'LOLSpiegel';
+    }
+}
+
+.alt-landing-layout .target {
+    filter: drop-shadow(0 0 10px #010b0d) drop-shadow(0 0 15px #010b0d);
+}
+
+.alt-landing-layout div a button {
+    width: 45%;
+    padding: 15px 0;
+    border: 2px solid #BE5A04;
+    color: #BE5A04;
+    font-family: 'LOLBeaufort';
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: larger;
+    display: inline-block;
+    margin-right: 2%;
+    background-color: #042028;
+}
+
+.pdf-ref {
+    text-decoration: none
+}
+
+.alt-landing-layout div a button:hover {
+    background-color: #382d05;
+}
+
+.aura-to-rank {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aurabox {
+    position: relative;
+    padding: 90px;
+    overflow: hidden;
+    cursor: pointer;
+
+    h1, h4 {
+        font-family: 'LOLBeaufort';
+    }
+}
+
+.aurabox::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: transparent;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.aurabox:hover::before {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.ambitious-box {
+    background-image: url('./assets/Soraka_DawnbringerSkin_HD.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1, h4 {
+        color: #d77017;
+        filter: drop-shadow(0 0 10px #010b0d)
+    }
+}
+
+.dauntless-box {
+    background-image: url('./assets/Cho\'Gath_DarkStarSkin_HD.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1, h4 {
+        color: #d77017;
+        filter: drop-shadow(0 0 10px #010b0d)
+    }
+}
+
+.resilient-box {
+    background-image: url('./assets/Diana_HeavenscaleSkin_HD.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1, h4 {
+        color: #042028;
+    }
+}
+
+.rankings {
+    position: absolute;
+    top: 100%;
+    z-index: 2;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+
+    .rank {
+        text-align: center;
+    }
+
+    img {
+        width: 90px;
+        height: auto;
+
+    }
+}
+
+.aurabox:hover .rankings{
+    transform: translateY(-100%);
+}
