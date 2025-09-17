@@ -51,6 +51,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    const inspoWrapper = document.querySelector('.alt-inspo-wrapper');
+    const inspoImg = document.getElementById('inspo-img');
+
+    window.addEventListener('scroll', () => {
+        if(document.getElementById('mainStylesheet').getAttribute('href') === 'league_styles.css') {
+            const rect = inspoImg.getBoundingClientRect();
+            const triggerPoint = window.innerHeight * 0.55;
+
+            if(rect.top < triggerPoint) {
+                inspoWrapper.classList.add('active');
+            }
+        }
+    });
+
     // QUALIFICATIONS CAROUSEL
     const slides = [
         {

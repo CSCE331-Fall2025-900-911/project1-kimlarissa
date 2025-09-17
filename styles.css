@@ -143,10 +143,26 @@ body{
 /* PORTFOLIO */
 .portfolio-title-container {
     font-family: 'ValFont';
+    align-self: center !important;
+    align-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
     color: #FD4556;
+    border-width: 1px;
     border-color: #FD4556;
     h1 {
         margin: 0;
+        align-self: center !important;
+        text-align: center;
+        display: inline-block;
+    }
+
+    td {
+        align-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        align-self: center !important;
+        vertical-align: middle;
     }
 }
 
@@ -236,7 +252,7 @@ body{
     cursor: pointer;
     border: transparent;
     border-radius: 6px;
-    transition: border 0.3s, transform 0.2s;
+    transition: border 0.2s, transform 0.2s;
 }
 
 .selection-item:hover {
@@ -300,6 +316,10 @@ body{
     padding: 5px;
     width: 40px;
     height: 40px;
+}
+
+.alt-inspo-wrapper {
+    display: none;
 }
 
 .middle-right button img {
