@@ -379,6 +379,21 @@ body{
     background-color: #BD3944;
 }
 
+.alt-skills-section {
+    display: none !important;
+}
+
+.alt-skills-item {
+    display: none;
+    h4, h2 {
+        display:none;
+    }
+}
+
+.alt-skills-grid {
+    display: none;
+}
+
 .skills-section {
     width: 100%;
     text-align: center;
@@ -442,6 +457,11 @@ body{
         color: white;
         font-family: 'Trebuchet MS';
     }
+
+    
+}
+.lore-img {
+    width: 20%;
 }
 
 /* SERVICE */
