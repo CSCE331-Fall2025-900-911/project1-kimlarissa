@@ -673,3 +673,59 @@ embed {
     width: 10% !important;
     max-width: 300px;
 }
+
+/* SERVICE */
+.service-table {
+    display: block;
+    width: 100%;
+}
+
+.service-table tr {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-table {
+    h2, p, small {
+        color: #BE5A04;
+    }
+
+    h2 {
+        font-family: 'LOLBeaufort';
+    }
+
+    p, small {
+        font-family: 'LOLSpiegel';
+    }
+
+    a{
+        color: #ebb07c;
+        text-decoration: none;
+        transition: 0.2s ease;
+    }
+    a:hover {
+        color:#3657c6;
+    }
+}
+
+.service-table td {
+    flex: 1;
+    padding: 2px !important;
+}
+
+.tao-section td:nth-child(1) { order: 1; }
+.tao-section td:nth-child(2) { order: 0; }
+.tao-section td:nth-child(3) { order: 2; }
+
+.stepping-section td:nth-child(1) { order: 1; }
+.stepping-section td:nth-child(2) { order: 2; }
+.stepping-section td:nth-child(3) { order: 0; }
+
+.tao-section img,
+.stepping-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
